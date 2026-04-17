@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: sku-engine-java
+  sql:
+    init:
+      mode: always # 每次启动都执行 SQL 脚本
+      # 如果你希望只在第一次启动时执行，可以改为 never，或者在本地手动执行后注释掉
+  datasource:
+    url: jdbc:mysql://localhost:3306/sku_demo?useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名转换
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 开发环境打印 SQL 方便调试
