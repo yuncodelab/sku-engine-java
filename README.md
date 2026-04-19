@@ -70,7 +70,10 @@ http://localhost:8080/v1/spu/1/detail
       "specId": "color",
       "specName": "颜色",
       "values": [
-        { "id": "black", "name": "黑色" }
+        {
+          "id": "black",
+          "name": "黑色"
+        }
       ]
     }
   ],
@@ -96,9 +99,10 @@ http://localhost:8080/v1/spu/1/detail
 
 本项目对应服务端实现，建议结合以下文章理解：
 
-* [（一）SKU 建模（笛卡尔积）](https://yuncodelab.github.io/system-design/sku/sku-part1.html)
-* [（二）服务端建模与接口设计](https://yuncodelab.github.io/system-design/sku/sku-part2.html)（⭐ 本项目对应）
-* [（三）Android SKU 选择引擎实现](https://yuncodelab.github.io/system-design/sku/sku-part3.html)
+* [电商 SKU 系统设计开篇](https://yuncodelab.github.io/system-design/sku/)
+* [第一篇：数据结构设计（基于笛卡尔积）](https://yuncodelab.github.io/system-design/sku/sku-part1.html)
+* [第二篇：服务端建模与接口设计](https://yuncodelab.github.io/system-design/sku/sku-part2.html)（⭐ 本项目对应）
+* [第三篇：Android SKU 选择引擎实现](https://yuncodelab.github.io/system-design/sku/sku-part3.html)
 
 ---
 
